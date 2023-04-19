@@ -60,7 +60,7 @@ function loadlive2d(canvas_id, json_object_or_url, on_load) {
         pio_refresh_style()
 
         // check alignment, and align model to corner
-        if (document.getElementsByClassName("pio-container").item(0).className.includes("right")){
+        if (document.getElementsByClassName("pio-container").item(0).className.includes("left")){
             model.x = 0
         } else {
             model.x = canvas.width - model.width

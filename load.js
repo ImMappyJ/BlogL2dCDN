@@ -44,10 +44,10 @@ const initConfig = {
   onModelLoad: onModelLoad
 }
 
-function 加载圣·嘉然() {
+function loadRan() {
   pio_reference = new Paul_Pio(initConfig)
 
-  pio_alignment = "left"
+  pio_alignment = "right"
 
   // Then apply style
   pio_refresh_style()
@@ -227,4 +227,4 @@ function onModelLoad(model) {
 
 
 var pio_reference
-window.onload = 加载圣·嘉然
+window.onload = loadRan
