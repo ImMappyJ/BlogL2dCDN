@@ -78,7 +78,6 @@ var Paul_Pio = function (prop) {
         home: modules.create("span", { class: "pio-home" }),
         skin: modules.create("span", { class: "pio-skin" }),
         info: modules.create("span", { class: "pio-info" }),
-        night: modules.create("span", { class: "pio-night" }),
         close: modules.create("span", { class: "pio-close" }),
 
         show: modules.create("div", { class: "pio-show" })
@@ -171,17 +170,6 @@ var Paul_Pio = function (prop) {
                 modules.render("想了解更多关于我的信息吗？");
             };
             current.menu.appendChild(elements.info);
-
-            // 夜间模式
-            if (prop.night) {
-                elements.night.onclick = function () {
-                    eval(prop.night);
-                };
-                elements.night.onmouseover = function () {
-                    modules.render("夜间点击这里可以保护眼睛呢");
-                };
-                current.menu.appendChild(elements.night);
-            }
 
             // 关闭看板娘
             elements.close.onclick = function () {
